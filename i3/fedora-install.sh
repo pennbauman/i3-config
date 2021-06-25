@@ -44,7 +44,7 @@ message "Builds From Source"
 mkdir -p "$loc/.local"
 
 message "  xidlehook"
-sudo dnf -y install cargo libX11-devel
+sudo dnf -y install libX11-devel
 cargo install xidlehook --locked --bins
 
 message "  pamixer"
