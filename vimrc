@@ -17,7 +17,6 @@ augroup END
 " General
 filetype plugin on
 set encoding=utf8
-set clipboard+=unnamedplus
 
 " Appearance
 set number
@@ -49,4 +48,3 @@ nmap ; :
 nmap < v<
 nmap > v>
 nmap <S-d> dd
-vmap <S-y> ! xsel -b<enter>u
