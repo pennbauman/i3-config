@@ -81,7 +81,7 @@ sudo flatpak -y install flathub $flatpaks
 message "Linking ~/.minecraft/"
 mkdir -p $HOME/.var/app/com.mojang.Minecraft/data/minecraft/saves
 mkdir -p $HOME/.var/app/com.mojang.Minecraft/data/minecraft/resourcepacks
-rm $HOME/.minecraft
+rm -rf $HOME/.minecraft
 ln -fs $HOME/.var/app/com.mojang.Minecraft/data/minecraft $HOME/.minecraft
 
 message "Installing Sass (from npm)"

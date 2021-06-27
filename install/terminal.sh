@@ -45,8 +45,8 @@ sudo rm -f /root/.zshrc
 sudo cp -f $loc/configs/zshrc-root /root/.zshrc
 
 message "Setting Up Zsh"
-sudo chsh -s /usr/bin/zsh root
-chsh -s /usr/bin/zsh
+sudo usermod -s /usr/bin/zsh root
+sudo usermod -s /usr/bin/zsh penn
 if [ -f $loc/$comp/zsh-dirs ]; then
 	ln -fs $loc/$comp/zsh-dirs $HOME/.zsh-dirs
 fi
